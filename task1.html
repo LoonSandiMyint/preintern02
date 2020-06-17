@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+            document.querySelectorAll('.color-change').forEach(function(option){
+                option.onclick=function(){
+                    document.querySelector('#hello').style.color=option.dataset.color;
+                };
+            })
+            
+        });
+    </script>
+    <title>My website</title>
+</head>
+<body>
+    <h1 id="hello">Hello! Welcome to Our PreIntern Goup.</h1>
+    <select name="colors" id="cars">
+        <option class="color-change" data-color="red" value="red">Red</option>
+        <option class="color-change" data-color="black" value="black">Black</option>
+        <option class="color-change" data-color="Orange" value="orange">Orange</option>
+        <option class="color-change" data-color="Green" value="green">Green</option>
+        <option class="color-change" data-color="Pink" value="pink">Pink</option>
+        <option class="color-change" data-color="Blue" value="Blue">Blue</option>
+    </select>
+</body>
+</html>
